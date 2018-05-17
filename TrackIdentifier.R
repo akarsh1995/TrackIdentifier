@@ -5,7 +5,7 @@ library(httr)
 library(jsonlite)
 library(tuneR)
 
-getmusicdata <- function(file_path = "xyz.mp3", access_key, access_secret){
+getmusicdata <- function(file_path = "xyz.mp3", access_key = access_key, access_secret = access_secret){
   
   fingerprint<-readMP3(file_path)
   fingerprint%>%
